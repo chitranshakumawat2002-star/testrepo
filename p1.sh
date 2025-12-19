@@ -5,7 +5,7 @@ Log_File="$(cat /var/log/syslog)"
 echo "printing tail"
 #echo "$Log_File" | 
 tail -n 5 "$Log_File"
-<< comment
+
 echo "printing head"
 echo "$Log_File" | head -n 5
 
@@ -32,6 +32,5 @@ while true; do
 	
 	break
 
-    #sleep 5
+    #sleep 5    comment 
 done
-comment
